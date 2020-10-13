@@ -15,3 +15,9 @@ function showLightbox(ev) {
     img.src = imgUrl;
     lightbox.classList.add('visible');
 }
+//Po klikinięciu poza nasze zjdęcie powraca do stanu przed klikiem
+const lightbox = document.querySelector('.lightbox');
+lightbox.addEventListener('click', e=>{
+    if (e.target !== e.currentTarget) return
+    lightbox.classList.remove('visible')
+})
