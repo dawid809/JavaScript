@@ -13,6 +13,27 @@ function onKeyPress(ev){
         case 'KeyS':
         soundId='clap';
           break;
+          case'KeyD':
+        soundId='hihat';
+          break;
+          case'KeyF':
+        soundId='kick';
+          break;
+          case'KeyG':
+        soundId='openhat';
+          break;
+          case'KeyH':
+        soundId='ride';
+          break;
+          case'KeyJ':
+        soundId='snare';
+          break;
+          case'KeyK':
+        soundId='tink';
+          break;
+          case'KeyL':
+        soundId='tom';
+          break;
     }
     if(soundId){
         const soundTime=Date.now()-recordStartTime;
